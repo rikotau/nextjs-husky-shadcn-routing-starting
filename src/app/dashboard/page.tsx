@@ -9,9 +9,14 @@ export default function Dashboard() {
         You are currently on the dashboard. Routing with Next.js makes easier
         and faster.
       </p>
-      <Button asChild>
-        <Link href="/">Back to Home</Link>
-      </Button>
+      <div className="grid gap-2">
+        <Button asChild>
+          <Link href="/feed">Go To Routes</Link>
+        </Button>
+        <Button asChild>
+          <Link href="/">Back to Home</Link>
+        </Button>
+      </div>
     </div>
   );
 }
